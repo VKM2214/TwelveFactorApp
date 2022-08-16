@@ -442,22 +442,8 @@ $ tree target/classes
 You should also check that the files are present in the resulting jar file: 
 
 ```  
-$ jar tvf target/spring-and-react-0.0.1-SNAPSHOT.jar | grep public
-     0 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/
-     0 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/
-     0 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/css/
-     0 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/js/
-     0 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/media/
-494612 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/js/main.9980f700.js.map
-  3235 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/service-worker.js
-123322 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/js/main.9980f700.js
-   650 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/css/main.c17080f1.css
-  2671 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/media/logo.5d5d9eef.svg
-  1288 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/static/css/main.c17080f1.css.map
-  3870 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/favicon.ico
-   257 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/asset-manifest.json
-   548 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/index.html
-   317 Wed Apr 11 11:50:14 CEST 2018 BOOT-INF/classes/public/manifest.json
+$ jar tvf target/TwelveFactorApp-0.0.1-SNAPSHOT.jar
+
 ```
 
 Now, we're ready to start the application. Make sure you quit any running servers, and run the
@@ -475,9 +461,8 @@ $ java -jar target/TwelveFactorApp-0.0.1-SNAPSHOT.jar
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.0.1.RELEASE)
 
-2018-04-11 11:53:44.983  INFO 93434 --- [           main] n.k.s.TwelveFactorApp          : Starting TwelveFactorApp v0.0.1-SNAPSHOT on oven.local with PID 93434 (/Users/oven/git/react-and-spring/target/spring-and-react-0.0.1-SNAPSHOT.jar started by oven in /Users/oven/git/twelevefactorapp)
-2018-04-11 11:53:44.986  INFO 93434 --- [           main] n.k.s.SpringAndReactApplication          : No active profile set, falling back to default profiles: default
-2018-04-11 11:53:45.045  INFO 93434 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af3afd9: startup date [Wed Apr 11 11:53:45 CEST 2018]; root of context hierarchy
+2022-08-11 11:53:44.983  INFO 93434 --- [           main] n.k.s.TwelveFactorApp          : Starting TwelveFactorApp v0.0.1-SNAPSHOT on oven.local with PID 93434 (/Users/oven/git/react-and-spring/target/spring-and-react-0.0.1-SNAPSHOT.jar started by oven in /Users/oven/git/twelevefactorapp)
+
 2022-08-11 11:53:46.180  INFO 93434 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
 2022-08-11 11:53:46.221  INFO 93434 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2022-08-11 11:53:46.222  INFO 93434 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
