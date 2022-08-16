@@ -486,17 +486,9 @@ $ java -jar target/TwelveFactorApp-0.0.1-SNAPSHOT.jar
 [...]
 ```
 
-Open your web browser, and navigate to http://localhost:8080. You should now see the following: 
-
-![spring boot with react](finished.png)
-
-## Congratulations!
-
 You now have a spring boot application with a React frontend. During development, you can now run the application
 using `React-scripts` by running `cd frontend; npm start`, and you'll have all the benefits of rapid application 
 development with hot reloads and everything you might wish for, while being able to deploy the application to test
 and production environments as a single artifact. 
-
-Happy hacking!
 
 
